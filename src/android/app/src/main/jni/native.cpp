@@ -171,8 +171,6 @@ static Core::System::ResultStatus RunCitra(const std::string& filepath) {
 
     // Forces a config reload on game boot, if the user changed settings in the UI
     Config{};
-    // Replace with game-specific settings
-    u64 program_id{};
     FileUtil::SetCurrentRomPath(filepath);
     system.ApplySettings();
     Settings::LogSettings();
