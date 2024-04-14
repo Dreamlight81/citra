@@ -259,12 +259,12 @@ static void LoadOverrides(u64 title_id) {
         // Mario Kart 7
         Settings::values.skip_texture_copy = true;
     } else if (title_id == 0x00040000000D0000 || title_id == 0x0004000000076400 ||
-        title_id == 0x0004000000055F00 || title_id == 0x0004000000076500) {
+                      title_id == 0x0004000000055F00 || title_id == 0x0004000000076500) {
         // Luigi's Mansion: Dark Moon
         Settings::values.shaders_accurate_mul = true;
         Settings::SetFMVHack(!Settings::values.core_downcount_hack);
     } else if (title_id == 0x0004000000068B00 || title_id == 0x0004000000061300 ||
-        title_id == 0x000400000004A700 || title_id == 0x000400000005D700) {
+                      title_id == 0x000400000004A700 || title_id == 0x000400000005D700) {
         // Tales of the Abyss / Pac Man Party 3D
         Settings::values.skip_slow_draw = true;
     } else if (title_id == 0x000400000015CB00) {
